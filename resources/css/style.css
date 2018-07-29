@@ -9,16 +9,33 @@
 
 html {
   background-color: #fff;
-  color: #555;
-  font-family: 'Lato', 'Arial', 'sans-serif';
-  font-weight: 300;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
-
-ul li {
-  list-style: none;
+a {
+  text-decoration: none;
 }
+
+/* ul li {
+  list-style: none;
+} */
+/*===============================
+==========css-variables==========
+================================= */
+:root {
+  /* --main-bg-color: #0984e3; */
+  --main-bg-color: #27ae60;
+  --secondary-bg-color: #0871c2;
+  --code-bg-color: #ecf0f1;
+  --main-padding-gap: 20px;
+}
+
+/*=======================================
+==========basic-config-main-box==========
+========================================= */
 
 #main-doc {
   /*display:grid;
@@ -32,42 +49,122 @@ ul li {
   grid-row-gap: 1em;
 }
 
-#main-doc > div {
-  padding: 15px;
+#main-doc .main-box section {
 }
+
+.main-box section p,
+.main-box section ul li {
+  line-height: 135%;
+  font-size: 90%;
+  margin-bottom: 30px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.main-box section ul li {
+  list-style-position: inside;
+}
+
+.main-box h2 {
+  width: 80%;
+  margin-left: 10%;
+}
+
+code {
+  margin-bottom: 20px;
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  white-space: pre;
+  text-align: left;
+  position: relative;
+  /* word-break: normal;
+  word-wrap: normal; */
+  line-height: 145%;
+  background-color: var(--code-bg-color);
+  border-radius: 5px;
+  font-size: 90%;
+  color: #555;
+  border: 1px solid var(--secondary-bg-color);
+}
+
+/* #main-doc > div {
+  padding: 15px;
+} */
 .main-box {
   border: 3px solid green;
+  background-color: #fff;
 }
 .side-box {
   border: 3px solid red;
-  height: 91vh;
+  height: 92vh;
   position: sticky;
   /* box-sizing: border-box; */
   top: 65px;
+  background-color: #ecf0f1;
+  padding: 15px;
 }
 /* .row {
   max-width: 1140px;
   margin: 0 auto;
 } */
+hr {
+  width: 90%;
+  margin-left: 5%;
+}
+/*=====================
+==========headings==========
+======================= */
+h2 {
+  margin: 20px 0;
+  font-size: 180%;
+}
+
+h3 {
+  margin: 50px 0 10px 0;
+  font-size: 120%;
+}
+
+h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 90%;
+}
 
 /*=====================
 ==========icons==========
 ======================= */
-.ion-logo-javascript,
+/* .ion-logo-javascript,
 .ion-logo-github,
-.ion-logo-twitter {
+.ion-logo-twitter,
+.ion-logo-codepen,
+.ion-logo-instagram,
+.ion-logo-facebook, */
+.nav-icons {
   color: #fff;
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 130%;
+}
+
+.footer-icons {
+  color: #fff;
+  font-size: 130%;
+  margin-right: 20px;
 }
 
 .icon-link {
-  font-size: 200%;
+  font-size: 170%;
 }
 
-.ion-logo-github:hover,
-.ion-logo-twitter:hover {
-  color: #74b9ff;
+/* .ion-logo-github:hover,
+.ion-logo-twitter:hover,
+.ion-logo-codepen:hover,
+.ion-logo-instagram:hover,
+.ion-logo-facebook:hover, */
+.nav-icons:hover,
+.footer-icons:hover {
+  color: #f4f4f4;
   cursor: pointer;
 }
 /*=====================
@@ -79,7 +176,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background: #0984e3;
+  background: var(--main-bg-color);
   color: #fff;
   -webkit-box-shadow: 2px 1px 10px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 1px 10px -2px rgba(0, 0, 0, 0.75);
@@ -97,6 +194,11 @@ ul li {
 
 .doc-link {
   margin-right: 25px;
+  transition: all 0.3s;
+}
+
+.doc-link:hover {
+  color: #ecf0f1;
 }
 
 .nav-link-bigger {
@@ -111,4 +213,55 @@ ul li {
   padding: 10px;
   font-size: 80%;
   color: green;
+  outline: none;
+}
+/*=====================
+==========side-nav==========
+======================= */
+.side-box ul li {
+  margin-bottom: 5px;
+  font-size: 90%;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.side-box ul a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+  font-weight: 100;
+}
+
+.side-box ul a:hover {
+  color: #809ba2;
+}
+
+/*=====================
+==========footer==========
+======================= */
+footer {
+  background: var(--main-bg-color);
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 100;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer i {
+  margin: 0;
+}
+
+footer ul li {
+  font-size: 80%;
+  list-style: none;
+}
+
+.footer-text {
+  font-size: 70%;
+  margin-top: 5px;
 }
