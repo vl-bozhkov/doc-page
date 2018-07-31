@@ -28,7 +28,7 @@ a {
 :root {
   /* --main-bg-color: #0984e3; */
   --main-bg-color: #27ae60;
-  --secondary-bg-color: #0871c2;
+  --secondary-bg-color: #219251;
   --code-bg-color: #ecf0f1;
   --main-padding-gap: 20px;
 }
@@ -103,11 +103,38 @@ code {
   top: 65px;
   background-color: #ecf0f1;
   padding: 15px;
+  /* color: #000; */
 }
 /* .row {
   max-width: 1140px;
   margin: 0 auto;
 } */
+
+.ref-link {
+  color: #000;
+}
+
+.ref-link:hover {
+  color: #555;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul a {
+  /* display: none; */
+  color: #fff;
+  list-style: none;
+  font-size: 80%;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.mobile-menu ul a:hover {
+  color: #555;
+}
+
 hr {
   width: 90%;
   margin-left: 5%;
@@ -164,7 +191,7 @@ h4 {
 .ion-logo-facebook:hover, */
 .nav-icons:hover,
 .footer-icons:hover {
-  color: #f4f4f4;
+  color: #eee;
   cursor: pointer;
 }
 /*=====================
@@ -198,7 +225,7 @@ h4 {
 }
 
 .doc-link:hover {
-  color: #ecf0f1;
+  color: #eee;
 }
 
 .nav-link-bigger {
@@ -233,7 +260,7 @@ h4 {
 }
 
 .side-box ul a:hover {
-  color: #809ba2;
+  color: #444;
 }
 
 /*=====================
@@ -259,6 +286,15 @@ footer i {
 footer ul li {
   font-size: 80%;
   list-style: none;
+}
+
+footer ul a {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+footer ul a:hover {
+  color: #ecf0f1;
 }
 
 .footer-text {

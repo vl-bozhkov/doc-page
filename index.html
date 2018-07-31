@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/ionicons@4.2.5/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./vendors/css/normalize.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/queries.css">
     <title>JS Documentation</title>
 </head>
 
@@ -26,13 +27,66 @@
             <!-- <a href="#" class="doc-link">Docs</a>
             <a href="#" class="doc-link">Docs</a> -->
         </div>
-        <div class="nav-link">
+        <div class="nav-link nav-input">
             <input type="text" name="" id="" placeholder="Search docs">
             <a href="https://github.com/trending/javascript" target="_blank" class="nav-link">
                 <i class="icon ion-logo-github nav-icons"></i>
             </a>
             <a href="https://twitter.com/javascript?lang=en" target="_blank" class="nav-link">
                 <i class="icon ion-logo-twitter nav-icons"></i>
+            </a>
+        </div>
+
+        <div class="mobile-menu js--mobile-nav">
+            <ul>
+                <a href="#introduction">
+                    <li>Introduction</li>
+                </a>
+
+                <a href="#know">
+                    <li>What you should already know</li>
+                </a>
+                <a href="#js-java">
+                    <li>JavaScript and Java</li>
+                </a>
+                <a href="#hello-world">
+                    <li>Hello World</li>
+                </a>
+                <a href="#variables">
+                    <li>Variables</li>
+                </a>
+                <a href="#var-declare">
+                    <li>Declaring variables</li>
+                </a>
+                <a href="#var-scope">
+                    <li>Variable scope</li>
+                </a>
+                <a href="#var-global">
+                    <li>Global variables</li>
+                </a>
+                <a href="#constants">
+                    <li>Constants</li>
+                </a>
+                <a href="#data-types">
+                    <li>Data Types</li>
+                </a>
+                <a href="#if-else">
+                    <li>If Else</li>
+                </a>
+                <a href="#while">
+                    <li>While Statement</li>
+                </a>
+                <a href="#function-decl">
+                    <li>Function declarations</li>
+                </a>
+                <a href="#reference">
+                    <li>Reference</li>
+                </a>
+            </ul>
+        </div>
+        <div class="burger-icon">
+            <a class="mobile-nav-icon js--nav-icon" href="#">
+                <i class="icon ion-md-menu"></i>
             </a>
         </div>
     </nav>
@@ -437,7 +491,7 @@
                 </header>
                 <ul>
                     <li>All the documentation in this page is taken from
-                        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                        <a class="ref-link" href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
                     </li>
                 </ul>
             </section>
@@ -445,28 +499,42 @@
                 <div class="resources">
                     <h4>Resources</h4>
                     <ul>
-                        <a href=""></a>
-                        <li>About</li>
-                        <li>Resources Listing</li>
-
-                        <li>Blog</li>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                            <li>About</li>
+                        </a>
+                        <a href="https://github.com/sorrycc/awesome-javascript" target="_blank">
+                            <li>Resources Listing</li>
+                        </a>
+                        <a href="http://dailyjs.com/" target="_blank">
+                            <li>Blog</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="help">
                     <h4>Help</h4>
                     <ul>
-                        <li>Stack Overflow</li>
-                        <li>Gitter</li>
+                        <a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank">
+                            <li>Stack Overflow</li>
+                        </a>
+                        <a href="https://gitter.im/explore/tags/javascript" target="_blank">
+                            <li>Gitter</li>
+                        </a>
 
                     </ul>
                 </div>
                 <div class="community">
                     <h4>Community</h4>
                     <ul>
-                        <li>Events</li>
-                        <li>Meetups</li>
-                        <li>Twitter</li>
-                        <li>Github</li>
+
+                        <a href="https://www.meetup.com/jsmeetup/?_cookie-check=NKozdvgpwrkYr4zI" target="_blank">
+                            <li>Meetups</li>
+                        </a>
+                        <a href="https://twitter.com/javascript?lang=en" target="_blank">
+                            <li>Twitter</li>
+                        </a>
+                        <a href="https://github.com/javascript" target="_blank">
+                            <li>Github</li>
+                        </a>
                     </ul>
                 </div>
 
@@ -541,7 +609,10 @@
             </ul>
         </div>
     </main>
-    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
 </body>
 
 </html>
