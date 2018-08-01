@@ -49,9 +49,6 @@ a {
   grid-row-gap: 1em;
 }
 
-#main-doc .main-box section {
-}
-
 .main-box section p,
 .main-box section ul li {
   line-height: 135%;
@@ -92,11 +89,11 @@ code {
   padding: 15px;
 } */
 .main-box {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   background-color: #fff;
 }
 .side-box {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 92vh;
   position: sticky;
   /* box-sizing: border-box; */
@@ -119,6 +116,10 @@ code {
 }
 
 .mobile-menu {
+  display: none;
+}
+
+.mobile-nav-icon {
   display: none;
 }
 

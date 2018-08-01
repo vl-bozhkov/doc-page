@@ -23,7 +23,8 @@ $(document).ready(function() {
           event.preventDefault();
           $('html, body').animate(
             {
-              scrollTop: target.offset().top
+              // scrollTop: target.offset().top
+              scrollTop: target.offset().top - $('nav').height()
             },
             1000,
             function() {
