@@ -86,8 +86,8 @@
   }
 
   .main-box section {
-    width: 80%;
-    margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;
   }
 
   #navbar {
@@ -106,10 +106,19 @@
   }
 
   code {
-    font-size: 70%;
+    font-size: 80%;
     width: 90%;
     margin-left: 5%;
     padding: 0;
+  }
+
+  .main-box section p,
+  .main-box section ul li {
+    line-height: 135%;
+    font-size: 90%;
+
+    width: 100%;
+    margin: 30px auto;
   }
 
   .nav-input {

@@ -83,6 +83,7 @@ code {
   font-size: 90%;
   color: #555;
   border: 1px solid var(--secondary-bg-color);
+  overflow: scroll;
 }
 
 /* #main-doc > div {
@@ -91,6 +92,7 @@ code {
 .main-box {
   /* border: 3px solid green; */
   background-color: #fff;
+  overflow-x: hidden;
 }
 .side-box {
   /* border: 3px solid red; */
